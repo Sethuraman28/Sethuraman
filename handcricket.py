@@ -6,7 +6,7 @@ def handcricket():
 	comp_choice=r.randint(1,10)
 	sum=0
 	while True:
-		if even_odd=="odd":
+		if even_odd=="odd" or even_odd=="ODD" or even_odd=="Odd":
 			print("Hai!")
 			n=int(input("Enter a number from 1 to 10:"))
 			if n<=10:
@@ -19,7 +19,7 @@ def handcricket():
 			else:
 				print("Invalid Input!!!\nStart the game from beginning")
 				handcricket()
-		elif even_odd=="even":
+		elif even_odd=="even" or even_odd=="EVEN" or even_odd=="Even":
 			print("Hello")
 			n=int(input("Enter a number from 1 to 10:"))
 			num=n+comp_choice
@@ -70,7 +70,7 @@ def handcricket():
 					handcricket()
 			else:
 				print("YAY! You won the game!\a CONGRATS!")
-			play=input("If you wanna play the game again press 1 or if you wanna quit press any 0 and enter:")
+			play=int(input("If you wanna play the game again press 1 or if you wanna quit press any 0 and enter:"))
 			if play==1:
 				handcricket()
 			else:
@@ -112,7 +112,7 @@ def handcricket():
 					handcricket()
 			else:
 				print("Yay! \nComputer won the match!")
-			play=input("If you wanna play the game again press 1 or if you wanna quit press 0 and enter:")
+			play=int(input("If you wanna play the game again press 1 or if you wanna quit press 0 and enter:"))
 			if play==1:
 				handcricket()
 			else:
@@ -157,7 +157,7 @@ def handcricket():
 			else:
 				print("Yay! \nComputer won the match!")
 			
-			play=input("If you wanna play the game again press 1 or if you wanna quit press 0 and enter:")
+			play=int(input("If you wanna play the game again press 1 or if you wanna quit press 0 and enter:"))
 			if play==1:
 				handcricket()
 			else:
@@ -199,7 +199,7 @@ def handcricket():
 					handcricket()
 			else:			
 				print("Yay!!! You won the match!")
-			play=input("If you wanna play the game again press 1 or if you wanna quit press 0 and enter:")
+			play=int(input("If you wanna play the game again press 1 or if you wanna quit press 0 and enter:"))
 			if play==1:
 				handcricket()
 			else:
