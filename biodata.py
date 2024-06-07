@@ -1,0 +1,7 @@
+name=input("Enter your name:")
+fname=input("Enter your father's name:")
+dob=input("Enter your date of birth (dd/mm/yyyy):")
+add=input("Enter your residential address:")
+ph=int(input("Enter your phone number:"))
+bg=input("Enter your blood group:")
+print("Here is your bio data!!!\nYour name is : {}\nYour father's name is : {}\nYour date of birth is : {}\nYour residential address is :{}\nYour phone number is:{}\nYour blood group is :{}".format(name,fname,dob,add,ph,bg))
