@@ -2,8 +2,14 @@ x=int(input("Enter the number:"))
 class odev:
 	def check(self,num):
 		if num%2==0:
-			print(num,"is even")
+			if num>0:
+				print(num,"is positive even")
+			else:
+				print(num,"is negative even")
 		else:
-			print(num,"is odd")
+			if num>0:
+				print(num,"is positive odd")
+			else:
+				print(num,"is negative odd")
 n=odev()
 n.check(x)
