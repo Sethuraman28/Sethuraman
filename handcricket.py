@@ -9,7 +9,7 @@ def handcricket():
 		if even_odd=="odd" or even_odd=="ODD" or even_odd=="Odd":
 			print("Hai!")
 			n=int(input("Enter a number from 1 to 10:"))
-			if n<=10:
+			if (n<=10 and n>=1):
 				num=n+comp_choice
 				if num%2==0:
 					print("Computer won the toss!!!")
@@ -22,12 +22,16 @@ def handcricket():
 		elif even_odd=="even" or even_odd=="EVEN" or even_odd=="Even":
 			print("Hello")
 			n=int(input("Enter a number from 1 to 10:"))
-			num=n+comp_choice
-			if num%2==0:
-				print("You won the toss!!!")
-				sum+=1
+			if (n<=10 and n>=1):
+				num=n+comp_choice
+				if num%2==0:
+					print("You won the toss!!!")
+					sum+=1
+				else:
+					print("Computer won the toss!!!")
 			else:
-				print("Computer won the toss!!!")
+				print("Invalid Input!!!\nStart the game from beginning")
+				handcricket()
 		else:
 			print("Invalid Input!!!")
 		break
@@ -41,10 +45,10 @@ def handcricket():
 			while True:				
 				Run=r.randint(1,10)
 				bowl=int(input("Bowl:"))
-				if bowl<=10:
+				if (bowl<=10 and bowl>=1):
 					if bowl!=Run:
 						run+=Run
-						print(run,Run)
+						print("Score:", run,", Your option:", bowl)
 					elif bowl==Run:
 						print(f"Computer got out at {run} runs")
 						break
@@ -61,7 +65,7 @@ def handcricket():
 				if bat<=10:
 					if bat!=Bowl:
 						batrun+=bat
-						print(batrun,Bowl)
+						print("Score:",batrun,", Computer chose ", Bowl)
 					elif bat==Bowl:
 						print("GAME OVER!!! \n You lose the match and computer wins! \nBetter luck next time!")
 						break
@@ -86,7 +90,7 @@ def handcricket():
 				if bat<=10:
 					if bat!=Bowl:
 						batrun+=bat
-						print(batrun,Bowl)
+						print("Score:",batrun,", Computer chose ",Bowl)
 					elif bat==Bowl:
 						print(f"You got out at {batrun} runs!")
 						print("Computer's target is {} runs!".format(batrun+1))
@@ -103,7 +107,7 @@ def handcricket():
 				if bowl<=10:
 					if bowl!=Run:
 						run+=Run
-						print(run,Run)
+						print("Score:",run,"Your option:",bowl)
 					elif bowl==Run:
 						print(f"Computer got out at {run} runs\nYay! You won the game!")
 						break
@@ -129,7 +133,7 @@ def handcricket():
 				if bat<=10:
 					if bat!=Bowl:
 						batrun+=bat
-						print(batrun,Bowl)
+						print("Score:",batrun,"Computer chose ",Bowl)
 					elif bat==Bowl:
 						print(f"You got out at {batrun} runs!")
 						print("Computer's target is {} runs!".format(batrun+1))
@@ -147,7 +151,7 @@ def handcricket():
 				if bowl<=10:
 					if bowl!=Run:
 						run+=Run
-						print(run,Run)
+						print("Score",run,"Your option:",bowl)
 					elif bowl==Run:
 						print(f"Computer got out at {run} runs\nYou won the match \nCongrats.........")
 						break
@@ -172,7 +176,7 @@ def handcricket():
 				if bowl<=10:
 					if bowl != Run:
 						run+=Run
-						print(run,Run)
+						print("Score:",run,"Your option:", bowl)
 					elif bowl==Run:
 						print(f"Computer got out at {run} runs")
 						print("Your target is {} runs".format(run+1))
@@ -189,7 +193,7 @@ def handcricket():
 				if bat<=10:
 					if bat != Bowl:
 						batrun+=bat
-						print(batrun,Bowl)
+						print("Score:", batrun,"Computer chose", Bowl)
 					elif bat==Bowl:
 						print(Bowl)
 						print("GAME OVER!!! \n You lose the match and computer wins! \nBetter luck next time!")
